@@ -14,14 +14,13 @@ interface HomeProps {
 }
 
 export default function Home({ product }: HomeProps) {
-  console.log(product)
 
   return (
     <>
       <Head>
         <title>Inicio | ig.news</title>
       </Head>
-      
+
       <main className={styles.contentContainer}>
         <section className={styles.hero}>
           <span>👏 Hey, welcome</span>
@@ -33,7 +32,7 @@ export default function Home({ product }: HomeProps) {
           <SubscribeButton priceId={product.priceId}/>
         </section>
 
-        <img 
+        <img
           src="/images/avatar.svg"
           alt="Girl coding"
         />
